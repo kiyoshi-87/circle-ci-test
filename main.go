@@ -10,12 +10,12 @@ func ConvertToUpperCase(input string) string {
 }
 
 func main() {
-	fmt.Print("Enter a string: ")
+	fmt.Print("Enter a string that you want to convert from lowercase to uppercase: ")
 	var input string
 
 	fmt.Scanln(&input)
 
 	upperCase := ConvertToUpperCase(input)
 
-	fmt.Println("Uppercase:", upperCase)
+	fmt.Println("Your uppercase word is:", upperCase)
 }
