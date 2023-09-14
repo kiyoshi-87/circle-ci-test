@@ -6,13 +6,13 @@ jobs:
       - image: golang:1.21
     steps:
       - checkout
-      - run: main.go
+      - run: go build main.go
   test:
     docker: 
       - image: golang:1.21
     steps:
       - checkout
-      - run: main.go
+      - run: go build main_test.go
     
 workflows: 
   build_and_test:
